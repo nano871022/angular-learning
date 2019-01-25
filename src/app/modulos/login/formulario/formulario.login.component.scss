@@ -1,0 +1,19 @@
+.error{
+	color:red;
+	width:100%;
+	background-color: #ffdb98;
+	border-radius: 4px;
+	padding: 3px;
+}
+.popup{
+	position:absolute;
+	background:#ccc;
+	border-radius:10px;
+	box-shadow: 5px 5px 5px #2c0e0e;
+	padding:5px;
+	z-index:2;
+	top:-10px;
+}
+.login:hover login-form>.popup{
+	display:block;
+}

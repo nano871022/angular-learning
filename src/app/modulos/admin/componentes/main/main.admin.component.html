@@ -1,0 +1,18 @@
+<h3>{{titulo}}</h3>
+<nav>
+  <ul>
+    <li>
+      <a [routerLink]="['./listado']">Listado</a>
+    </li>
+    <li>
+      <a [routerLink]="['./agregar']">Agregar</a>
+    </li>
+    <li>
+      <a [routerLink]="['./editar']">Modificar</a>
+    </li>
+  </ul>
+
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>

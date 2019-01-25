@@ -1,0 +1,9 @@
+<div class="popup" *ngIf="show==true">
+	<table>
+		<tr><th colspan="2">Inicio de Sesion</th></tr>
+		<tr><td><label for="usuario">Usuario</label></td><td><input type="text" name="usuario" [(ngModel)]="usuario" ></td></tr>
+		<tr><td><label for="contrasna">Contraseña</label></td><input type="password" name="contrasena" [(ngModel)]="contrasena"><td></td></tr>
+		<tr><td ><button (click)="validar()">Iniciar</button></td><td><button (click)="cerrar()">Cerrar</button></td></tr>
+	</table>
+	<span class="error" *ngIf="error">{{error}}</span>
+</div>
